@@ -1,0 +1,121 @@
+      .right-main {
+        width: 81vw;
+        max-height: 81vh;
+        background-color: rgba(128, 128, 128, 0.3);
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        overflow-x: hidden;
+      }
+      .trending-container{
+        margin-top: 2rem;
+      }
+
+      .trending-heading {
+        padding: 0 1rem;
+      }
+      .show-all {
+        text-decoration: none;
+      }
+      .trending-card-container {
+        gap: 1rem;
+        overflow-x: auto;
+        padding: 0.5rem 1rem;
+        overflow-y: hidden;
+        scrollbar-width: none;
+      }
+      .song-card {
+        /* border: 1px solid red; */
+        flex: 0 0 180px;
+        padding: 0.5rem;
+        width: 15%;
+        border-radius: 0.5rem;
+      }
+      .song-card:hover {
+        background-color: rgba(62, 62, 62, 0.597);
+        cursor: pointer;
+      }
+      .img-container {
+        width: fit-content;
+        background-color: transparent;
+        margin: auto;
+        border-radius: 0.5rem;
+        position: relative;
+      }
+      .song-img {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+      .artist-img {
+        width: 100%;
+        border-radius: 50%;
+      }
+      .song-name {
+        font-size: small;
+        padding: 1rem 0.5rem 0 1rem;
+        opacity: 0.92;
+        text-overflow: ellipsis;
+        background-color: transparent;
+      }
+      .about-song {
+        font-size: small;
+        opacity: 0.7;
+        padding: 0.5rem 0.5rem 1rem 1rem;
+        background-color: transparent;
+        text-overflow: ellipsis;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        height: 2.5rem;
+      }
+      .play-icon {
+        position: absolute;
+        top: 80%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        background-color: #1ed760;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 50%;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .song-card:hover .play-icon {
+        opacity: 1;
+      }
+      .play-icon > img {
+        position: relative;
+        left: 1px;
+        width: 2rem;
+        background-color: #1ed760;
+      }
+
+      @media screen and (max-width: 1050px) {
+        .right-main {
+          width: 100vw;
+        }
+        
+      }
+
+       @media (max-width: 550px) {
+        .right-main {
+          width: 100vw;
+        }
+        .trending-card-container{
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            /* border: 2px solid red; */
+            gap: 2rem;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 60vh;
+        }
+        .song-card{
+            width: auto;
+        }
+      } 

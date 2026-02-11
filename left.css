@@ -1,0 +1,98 @@
+
+        .main-container{
+
+            display: flex;
+            background-color: black;
+            /* height: 100vh; */
+            width: 99vw;
+            margin-top: 3.5rem;
+        }
+        .left-main{
+            background-color: rgba(128, 128, 128, 0.3);
+            width: 19%;
+            margin: 0.5rem 0 0.5rem 0.5rem;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            max-height: 81vh;
+            overflow-y: scroll;
+            scrollbar-width: none;
+            overflow-x: hidden;
+        }
+        .left-heading-container{
+            height: 10%;
+        }
+        .plus{
+            font-size: large;
+            font-weight: 500;
+            background-color: rgba(128, 128, 128, 0.13);
+            padding: 0.4rem 0.7rem;
+            border-radius: 50%;
+        }
+        .card{
+            padding: 1.5rem 1rem;
+            background-color: rgba(128, 128, 128, 0.19);
+            border-radius: 0.3rem;
+            margin-top: 1rem;
+        }
+        .card:hover{
+            transform: scale(1.03,1.03);
+        }
+        .card *{
+            margin-top: 0.5rem;
+        }
+        .card>h3{
+            font-size: medium;
+        }
+        .card>p{
+            font-size: smaller;
+        }
+        .card>button{
+            font-weight: 800;
+            padding: 0.5rem 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .library-container{
+            height: 70%;
+            overflow: scroll;
+            scrollbar-width: none;
+            overflow-x: hidden;
+        }
+        .footer-items{
+            list-style: none;
+            gap: 1rem;
+            margin-top: 2rem;
+            padding: 1rem;
+        }
+        .footer-items li{
+            font-size: x-small;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .footer-cookies{
+            font-size: smaller;
+            margin-left: 1rem;
+        }
+        [alt="language-log"]{
+            filter: invert(1);
+            height: 1.2rem;
+            padding-right: 0.5rem;
+        }
+
+        @media screen and (max-width: 1050px) {
+            .main-container{
+                /* flex-direction: column; */
+                overflow: hidden;
+                width: 99vw;
+                height: 100vh;
+                margin-top: 3.5rem;
+            }
+            .left-main{
+                position: absolute;
+                right: 100%;
+                width: 100%;
+                height: fit-content;
+                max-height: fit-content;
+                margin: 0.5rem 0 0.5rem 0.5rem;
+            }
+            
+        }
