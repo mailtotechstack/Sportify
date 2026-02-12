@@ -88,11 +88,13 @@
             }
             .left-main{
                 position: absolute;
-                right: 100%;
+                display: none;
                 width: 100%;
                 height: fit-content;
                 max-height: fit-content;
                 margin: 0.5rem 0 0.5rem 0.5rem;
+                z-index: 1;
+                background-color: black;
             }
             
         }

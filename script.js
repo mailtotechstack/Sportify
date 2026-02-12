@@ -9,3 +9,15 @@ document.getElementsByClassName("toggle")[0].addEventListener("click", ()=>{
         cc=true;
     }
 });
+
+let dd = true
+document.getElementsByClassName("library-toggle")[0].addEventListener("click", ()=>{
+    if(dd){
+        document.getElementsByClassName("left-main")[0].style.display = "block";
+        dd=false;
+    }
+    else{
+        document.getElementsByClassName("left-main")[0].style.display = "none";
+        dd=true;
+    }
+});
